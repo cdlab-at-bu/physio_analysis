@@ -16,7 +16,7 @@ data_file   = varargin{1};
 info_file  = varargin{2};
 TR         = varargin{3};
 Hz         = varargin{4};
-th         = varargin{5};  % Should be 4000 for PULSE, 2300 for RESP (RESP threshold still needs some fine tuning)
+th         = varargin{5};  % Should be 4000 for PULSE, 
 
 
 P.TR        = TR; % Acquisition time (for working around dummy scans)
