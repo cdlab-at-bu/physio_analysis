@@ -42,12 +42,12 @@ signal = data{1,3}; % Extract pulse/resp info from 'data'
 time_stamps = data{1,1};
 peak_times = time_stamps(pid);
 
-% ----- Plot first few data points to visually check the peak detection -----
+% ----- Plot first few peaks to visually check the peak detection -----
 figure;
-plot(signal(1:1000));
-y = zeros(4,1);
+plot(signal(1:10000));
+y = zeros(30,1);
 y(:,1) = th;
-x = pid(1:4,1);
+x = pid(1:30,1);
 hold on;
 plot(x,y,'--or');
 
